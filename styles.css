@@ -1,0 +1,119 @@
+body{
+    background-color: darkgrey;
+    font-family: "Chivo Mono", monospace;
+}
+
+h1{
+    text-align: center;
+}
+
+main{
+    height: 79vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#change-color{
+    height: 50px;
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+}
+.color-button{
+    height: 50px;
+    width: 80px;
+    border-radius: 10px;
+    border: none;
+}
+#black-white{
+    background:linear-gradient(90deg, rgba(0,0,0,1) 51%, rgba(255,255,255,1) 51%, rgba(255,255,255,1) 100%);
+}
+#purple-salmon{
+    background: linear-gradient(90deg, rgba(225,120,197,1) 51%, rgba(255,179,142,1) 51%, rgba(255,179,142,1) 100%);
+}
+#green-orange{
+    background: linear-gradient(90deg, rgba(0,127,115,1) 51%, rgba(255,199,0,1) 51%, rgba(255,199,0,1) 100%);
+}
+#purple-orange{
+    background: linear-gradient(90deg, rgba(127,39,255,1) 51%, rgba(253,191,96,1) 51%, rgba(253,191,96,1) 100%);
+}
+#calc-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: 120px repeat(5, 100px);
+    row-gap: 5px;
+    column-gap: 5px;
+    padding: 20px;
+    background-color: burlywood;
+    border-radius: 40px;
+}
+
+.black-white {
+    background-color: black !important;
+}
+.black-white button {
+    background-color: white;
+}
+.black-white #affich-result{
+    background-color: white;
+}
+
+.purple-salmon{
+    background-color: rgba(225,120,197,1) !important;
+}
+.purple-salmon button {
+    background-color: rgba(255,179,142,1);
+}
+.purple-salmon #affich-result{
+    background-color: rgba(255,179,142,1);
+}
+
+.green-orange{
+    background-color: rgba(0,127,115,1) !important;
+}
+.green-orange button{
+    background-color:rgba(255,199,0,1) ;
+}
+.green-orange #affich-result{
+    background-color:rgba(255,199,0,1) ;
+}
+
+.purple-orange{
+    background-color: rgba(127,39,255,1) !important;
+}
+.purple-orange button{
+    background-color: rgba(253,191,96,1);
+}
+.purple-orange #affich-result{
+    background-color:rgba(253,191,96,1);
+}
+
+
+.calc-button{
+    background-color: moccasin;
+    border: none;
+    font-size: 50px;
+    border-radius: 45px;
+}
+
+.calc-button:hover{
+    background-color: white;
+}
+
+#affich-result{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-column: 1 / 5;
+    background-color: saddlebrown;
+    font-size: 50px;
+    color: white;
+    border-radius: 45px;
+}
+#button-ac{
+    grid-column: 1 / 3;
+}
+#button-egal{
+    grid-column: 3 / 5;
+}
